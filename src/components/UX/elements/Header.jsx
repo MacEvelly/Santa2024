@@ -5,13 +5,8 @@ import { Logo } from "../../../assets/";
 export function Header() {
   return (
     <HeaderStyle>
-      <img src={Logo} className="logo" alt="Vite logo" />
-      <h1>
-        <a href="www.learn3Dweb.com" target="_blank">
-          Learn<b>3D</b>Web
-        </a>
-      </h1>
-      <h2>A New Dimension to the Web</h2>
+      <h1>Christmas Crash</h1>
+      <h2>Help santa find the presents</h2>
     </HeaderStyle>
   );
 }
@@ -19,15 +14,15 @@ export function Header() {
 const HeaderStyle = styled.div`
   background-color: #333;
   padding: 1rem;
+  display: grid;
+  grid-template-rows: min-content min-content;
+  align-content: center;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  display: grid;
-  grid-template-columns: min-content auto;
-  grid-template-rows: min-content min-content;
-  align-content: center;
+
   a {
     text-decoration: none;
     color: inherit;
@@ -39,16 +34,16 @@ const HeaderStyle = styled.div`
   }
   > h1 {
     display: flex;
-    font-size: 1.5rem;
+    font-family: var(--MainFont);
+    font-size: var(--TitleSize);
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     b {
       font-weight: bold;
     }
   }
   > h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: var(--TitleFont);
+    font-size: var(--CopySize);
     color: #414141;
   }
 `;

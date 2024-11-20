@@ -1,9 +1,14 @@
 /****************************************
 Basic
 ****************************************/
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Spicy+Rice&display=swap");
 :root {
-  --TitleFont: Tahoma, Verdana, sans-serif;
+  --MainFont: "Cookie", cursive;
+  --TitleFont: "Spicy Rice", serif;
   --Background: linear-gradient(to right, #ffd194, #d1913c);
+  --TitleSize: 3rem;
+  --SubtitleSize: 1.25rem;
+  --CopySize: 1rem;
 }
 
 html,
