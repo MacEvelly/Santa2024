@@ -7,7 +7,7 @@ import { Leva } from "leva";
 export function App() {
   return (
     <AppStyle>
-      <Leva titleBar={{title:"Debug Controls"}} hidden={true}/>
+      <Leva titleBar={{title:"Debug Controls"}} hidden={1}/>
       <Scene3D />
       <HUD />
     </AppStyle>

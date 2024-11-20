@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+export function Footer() {
+  return (
+    <FooterStyle>
+      Presents still lost: <span>8</span>
+    </FooterStyle>
+  );
+}
+
 const FooterStyle = styled.div`
   background-color: #333;
   padding: 1rem;
@@ -19,11 +27,3 @@ const FooterStyle = styled.div`
     text-decoration: none;
   }
 `;
-
-export function Footer() {
-  return (
-    <FooterStyle>
-      Presents still lost: <span>8</span>
-    </FooterStyle>
-  );
-}
