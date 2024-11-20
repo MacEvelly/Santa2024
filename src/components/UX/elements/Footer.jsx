@@ -4,6 +4,10 @@ import styled from "styled-components";
 const FooterStyle = styled.div`
   background-color: #333;
   padding: 1rem;
+  font-family: var(--TitleFont);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--CopySize);
   background: linear-gradient(
     to left,
     rgba(255, 255, 255, 1) 0%,
@@ -19,12 +23,7 @@ const FooterStyle = styled.div`
 export function Footer() {
   return (
     <FooterStyle>
-      <a
-        href="https://codesandbox.io/p/github/Learn3DWeb/template-r3f-basic/main"
-        target="_blank"
-      >
-        Template: R3F-Basic
-      </a>
+      Presents still lost: <span>8</span>
     </FooterStyle>
   );
 }
